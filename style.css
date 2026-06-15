@@ -195,3 +195,20 @@ header {
 
 
 }
+
+.footer-logo {
+
+    width:180px;
+
+    max-width:80%;
+
+    margin-bottom:20px;
+
+}
+
+
+footer p {
+
+    margin:0;
+
+}
