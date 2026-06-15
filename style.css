@@ -1,1 +1,197 @@
-body{margin:0;font-family:Arial;color:#111}header{display:flex;justify-content:space-between;padding:30px 10%}.logo{width:180px}.hero{background:#050505;color:white;padding:100px 10%}.hero h1{font-size:48px}.btn{background:#ff7a00;color:white;padding:15px 30px;text-decoration:none;border-radius:8px;display:inline-block}.cards{display:flex;gap:20px;justify-content:center;padding:50px}.cards div{padding:30px;box-shadow:0 5px 20px #ccc}footer{background:#303030;color:white;padding:30px;text-align:center}
+body {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111;
+}
+
+
+header {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 10%;
+}
+
+
+.logo {
+    width:180px;
+    max-width:100%;
+}
+
+
+.hero {
+
+    background:#050505;
+    color:white;
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+
+.hero h1 {
+
+    font-size:clamp(32px, 5vw, 48px);
+
+    line-height:1.15;
+
+    max-width:900px;
+
+    margin:0 auto 40px;
+
+}
+
+
+
+.btn {
+
+    background:#ff7a00;
+
+    color:white;
+
+    padding:18px 35px;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    display:inline-block;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    transition:all .3s ease;
+
+    box-shadow:0 8px 20px rgba(255,122,0,.3);
+
+    animation:pulse 2s infinite;
+
+}
+
+
+
+.btn:hover {
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 15px 30px rgba(255,122,0,.5);
+
+}
+
+
+
+@keyframes pulse {
+
+    0% {
+
+        box-shadow:0 0 0 0 rgba(255,122,0,.6);
+
+    }
+
+    70% {
+
+        box-shadow:0 0 0 20px rgba(255,122,0,0);
+
+    }
+
+    100% {
+
+        box-shadow:0 0 0 0 rgba(255,122,0,0);
+
+    }
+
+}
+
+
+
+.cards {
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    padding:50px;
+
+}
+
+
+.cards div {
+
+    padding:30px;
+
+    box-shadow:0 5px 20px #ccc;
+
+}
+
+
+footer {
+
+    background:#303030;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+header {
+
+    padding:25px;
+
+}
+
+
+.logo {
+
+    width:150px;
+
+}
+
+
+
+.hero {
+
+    padding:70px 20px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:34px;
+
+    line-height:1.15;
+
+    word-break:normal;
+
+}
+
+
+
+.btn {
+
+    width:100%;
+
+    max-width:300px;
+
+    padding:16px 20px;
+
+}
+
+
+}
